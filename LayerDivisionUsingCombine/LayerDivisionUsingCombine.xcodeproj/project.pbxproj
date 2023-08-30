@@ -117,7 +117,7 @@
 			children = (
 				A4D31C5C2A9E4A7200A92F09 /* API */,
 				A4D31C592A96577400A92F09 /* Entity */,
-				A4D31C562A96553000A92F09 /* Articles */,
+				A4D31C562A96553000A92F09 /* User */,
 				A4D31C232A9654DB00A92F09 /* AppDelegate.swift */,
 				A4D31C252A9654DB00A92F09 /* SceneDelegate.swift */,
 				A4D31C272A9654DB00A92F09 /* ViewController.swift */,
@@ -147,12 +147,12 @@
 			path = LayerDivisionUsingCombineUITests;
 			sourceTree = "<group>";
 		};
-		A4D31C562A96553000A92F09 /* Articles */ = {
+		A4D31C562A96553000A92F09 /* User */ = {
 			isa = PBXGroup;
 			children = (
 				A4D31C572A96556600A92F09 /* UsersViewModel.swift */,
 			);
-			path = Articles;
+			path = User;
 			sourceTree = "<group>";
 		};
 		A4D31C592A96577400A92F09 /* Entity */ = {
