@@ -24,6 +24,7 @@
 		A4D31C632A9E51C600A92F09 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31C622A9E51C600A92F09 /* UserEndpoint.swift */; };
 		A4D31C652A9F998300A92F09 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31C642A9F998300A92F09 /* UserService.swift */; };
 		A4D31C672A9F99D500A92F09 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31C662A9F99D500A92F09 /* User.swift */; };
+		A4D31C692AA0E39700A92F09 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D31C682AA0E39700A92F09 /* UsersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		A4D31C622A9E51C600A92F09 /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
 		A4D31C642A9F998300A92F09 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		A4D31C662A9F99D500A92F09 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A4D31C682AA0E39700A92F09 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				A4D31C572A96556600A92F09 /* UsersViewModel.swift */,
+				A4D31C682AA0E39700A92F09 /* UsersViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D31C652A9F998300A92F09 /* UserService.swift in Sources */,
+				A4D31C692AA0E39700A92F09 /* UsersViewController.swift in Sources */,
 				A4D31C602A9E4E1600A92F09 /* Common.swift in Sources */,
 				A4D31C282A9654DB00A92F09 /* ViewController.swift in Sources */,
 				A4D31C582A96556600A92F09 /* UsersViewModel.swift in Sources */,

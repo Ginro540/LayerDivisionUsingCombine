@@ -32,6 +32,7 @@ final class UsersViewModel: UsersViewModelType, UsersViewModelInputs, UsersViewM
     
     private let api: userServiceProtocol
     private var cancellable: [AnyCancellable] = []
+
     @Published private var _users: [User] = []
     
     init(api: userServiceProtocol){
@@ -47,7 +48,14 @@ final class UsersViewModel: UsersViewModelType, UsersViewModelInputs, UsersViewM
     private func fetchUsers() {
         self.api.getUsers()
             .receive(on: RunLoop.main)
-            .sink(receiveCompletion:  { data in
+            .sink(receiveCompletion:  { completion in
+                switch completion {
+                case .finished:
+                    // APIからの取得処理が「成功」した際に呼び出される処理
+                    break
+                case .failure(_): break
+                    // APIからの取得処理が「失敗」した際に呼び出される処理
+                }
                 
             }, receiveValue: { [weak self] data in
                 self?._users = data
