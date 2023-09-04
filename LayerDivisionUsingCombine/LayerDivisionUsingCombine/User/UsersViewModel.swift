@@ -11,6 +11,7 @@ import Combine
 protocol UsersViewModelInputs {
     var fetchUsersTrigger: PassthroughSubject <Void, Never> { get }
 }
+
 protocol UsersViewModelOutputs {
     var users: AnyPublisher<[User], Never> { get }
 }
@@ -46,7 +47,7 @@ final class UsersViewModel: UsersViewModelType, UsersViewModelInputs, UsersViewM
     }
     
     private func fetchUsers() {
-        self.api.getUsers()
+        self.api.getUsers(page: 0)
             .receive(on: RunLoop.main)
             .sink(receiveCompletion:  { completion in
                 switch completion {

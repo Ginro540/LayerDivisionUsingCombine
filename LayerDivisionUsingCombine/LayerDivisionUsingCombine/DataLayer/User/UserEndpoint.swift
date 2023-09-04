@@ -8,9 +8,7 @@
 import Foundation
 
 enum UserEndpoint: APIEndpoint {
-    
-    case getUsers
-    
+    case getUsers(page:Int)
     var baseURL: URL {
         return URL(string: "https://example.com/api")!
     }
@@ -38,8 +36,8 @@ enum UserEndpoint: APIEndpoint {
     
     var parameter: [String : Any]? {
         switch self {
-        case .getUsers:
-            return ["page": 1, "limit": 10]
+        case .getUsers(let page):
+            return ["page": page, "limit": 10]
         }
     }
 }

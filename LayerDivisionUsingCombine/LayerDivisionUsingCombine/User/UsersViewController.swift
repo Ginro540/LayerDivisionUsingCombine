@@ -16,7 +16,7 @@ class UserViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        viewModel.fetchUsersTrigger.send()
+        viewModel.input.fetchUsersTrigger.send()
     }
     
     override func viewDidLoad() {

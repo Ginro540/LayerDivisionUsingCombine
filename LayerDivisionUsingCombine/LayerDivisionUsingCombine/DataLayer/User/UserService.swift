@@ -9,13 +9,13 @@ import Foundation
 import Combine
 
 protocol userServiceProtocol {
-    func getUsers() -> AnyPublisher<[User], Error>
+    func getUsers(page:Int?) -> AnyPublisher<[User], Error>
 }
 
 class UserService: userServiceProtocol {
     let apiclient = URLSessionAPIClinet<UserEndpoint>()
     
-    func getUsers() -> AnyPublisher<[User], Error> {
-        return apiclient.request(endpoint: .getUsers)
+    func getUsers(page:Int?) -> AnyPublisher<[User], Error> {
+        return apiclient.request(endpoint: .getUsers(page: page ?? 0))
     }
 }

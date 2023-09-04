@@ -1,5 +1,5 @@
 //
-//  ApiManagementProtocol.swift
+//  APIClient.swift
 //  LayerDivisionUsingCombine
 //
 //  Created by 古賀貴伍社用 on 2023/08/30.
